@@ -1,0 +1,7 @@
+https://www.youtube.com/watch?v=t10QcFx7d5k&ab_channel=freeCodeCamp.org
+
+password msql : 123456
+
+
+pass pg admin :  admin
+pass superuser : admin123
