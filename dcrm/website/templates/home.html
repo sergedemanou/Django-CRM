@@ -10,7 +10,16 @@
 
 {% if user.is_authenticated %}
 
-<h1>Hello World</h1>
+<h1>Records...</h1>
+
+{% if records %}
+
+  {% for record in records %}
+    <h3>{{ record }}</h3><br>
+  {% endfor %}
+
+{% endif %}
+
 
 {% else %}
 
