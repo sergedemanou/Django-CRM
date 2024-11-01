@@ -1,6 +1,7 @@
 {% extends 'base.html'  %}
 
 
+
 {% block content %}
  
 
@@ -30,7 +31,7 @@
       <tr>
         <td>{{ record.first_name }} {{ record.last_name }}</td>
         <td>{{ record.email }}</td>
-        <td>{{ record.phone_number }}</td>
+        <td>{{ record.phone }}</td>
         <td>{{ record.city }}</td>
         <td>{{ record.address }}</td>
         <td>{{ record.state }}</td>
@@ -50,7 +51,7 @@
 {% else %}
 
 <div class = 'col-md-6 offset-md-3'>
-<h1>Login</h1>
+<h1 class = "titre" >Login</h1>
 
 <br/>
 

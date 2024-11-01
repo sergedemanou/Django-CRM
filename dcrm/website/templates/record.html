@@ -5,7 +5,7 @@
 
 <div class = 'col-md-6 offset-md-3'>
 
-<h1>User Record</h1>
+<h1 class = 'titre'>User Record</h1>
 <br>
 <div class="card">
     <div class="card-header">
@@ -16,13 +16,13 @@
         <strong>Email: </strong>{{ customer_record.email }}
       </p>
       <p class="card-text">
-        <strong>Phone: </strong>{{ customer_record.phone_number }}
+        <strong>Phone: </strong>{{ customer_record.phone }}
       </p>
       <p class="card-text">
         <strong>City: </strong>{{ customer_record.city }}
       </p>
       <p class="card-text">
-        <strong>Address: </strong>{{ customer_.address }}
+        <strong>Address: </strong>{{ customer_record.address }}
       </p>
       <p class="card-text">
         <strong>State: </strong>{{ customer_record.state }}
@@ -43,5 +43,6 @@
 
 <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
 <a href="{% url 'delete_record' customer_record.id %}" class="btn btn-danger">Delete</a>
+<a href="{% url 'update_record' customer_record.id %}" class="btn btn-primary">Update</a>
 
 {% endblock %}
